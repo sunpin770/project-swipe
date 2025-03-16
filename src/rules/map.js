@@ -1,4 +1,4 @@
-import { MyLevel } from "../scene";
+// import { MyLevel } from "../scene";
 import { vec } from "excalibur";
 export const map = {
     m1: vec(340, 300), m2: vec(400, 300), m3: vec(460, 300),
