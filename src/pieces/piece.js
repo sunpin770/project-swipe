@@ -1,11 +1,11 @@
 import { Actor, vec, Color } from "excalibur"
 export class Piece extends Actor {
-    constructor(x, y, name, [color]) {
+    constructor(x, y, name) {
         super({
             name: name,
             pos: vec(x, y),
             radius: 25,
-            color: color || Color.Blue,
+            color: Color.Blue,
         });
     }
 }

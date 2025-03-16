@@ -1,14 +1,14 @@
 
 import { Scene } from "excalibur";
 import { Background } from "./player.js";
-import { Piece } from "./pieces/piece.js";
-// import { Kai } from "./pieces/kai.js"
+// import { Piece } from "./pieces/piece.js";
+import { Kai } from "./pieces/kai.js"
 
 export class MyLevel extends Scene {
     onInitialize(engine) {
         const b1 = new Background(300, 800, 'b1');
         const b2 = new Background(800, 300, 'b2');
-        const testy = new Piece(300, 300, "testy");
+        const testy = new Kai(300, 300, "testy");
 
         //add stuff
         this.add(b1);
