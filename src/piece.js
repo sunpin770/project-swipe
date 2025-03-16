@@ -3,8 +3,8 @@ export class Piece extends Actor {
     constructor(x, y, name) {
         super({
             name: name,
-            position: vec(x, y),
-            radius: 50,
+            pos: vec(x, y),
+            radius: 25,
             color: Color.Blue,
         });
     }

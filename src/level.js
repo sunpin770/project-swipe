@@ -13,7 +13,6 @@ export class MyLevel extends Scene {
         this.add(b1);
         this.add(b2);
         this.add(testy);
-        console.log(testy);
     }
 // 
     // onPreLoad(loader) {
