@@ -1,4 +1,4 @@
-import { DisplayMode, Engine } from "excalibur";
+import { DisplayMode, Engine, Color } from "excalibur";
 import { loader } from "./resources.js";
 import { MyLevel } from "./level.js";
 
