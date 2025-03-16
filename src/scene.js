@@ -1,6 +1,6 @@
 
 import { Scene, Color } from "excalibur";
-import { Background } from "./player.js";
+import { Background } from "./background.js";
 // import { Piece } from "./pieces/piece.js";
 import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./pieces/type.js"
 
