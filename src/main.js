@@ -28,7 +28,5 @@ game.start('start', { // name of the start scene 'start'
   //   color: Color.ExcaliburBlue
   // })
 }).then(() => {
-  game.add(b1);
-  game.add(b2);
-  game.add(testy);
+  
 });
