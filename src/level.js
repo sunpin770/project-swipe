@@ -1,7 +1,8 @@
 
 import { Scene } from "excalibur";
 import { Background } from "./player.js";
-import { Piece } from "./pieces/piece.js"
+import { Piece } from "./pieces/piece.js";
+// import { Kai } from "./pieces/kai.js"
 
 export class MyLevel extends Scene {
     onInitialize(engine) {
