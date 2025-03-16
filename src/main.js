@@ -12,6 +12,7 @@ const game = new Engine({
   scenes: {
     start: MyLevel
   },
+  backgroundColor: Color.fromHex('#FFFFFF'),
   // physics: {
   //   solver: SolverStrategy.Realistic,
   //   substep: 5 // Sub step the physics simulation for more robust simulations
