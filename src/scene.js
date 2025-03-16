@@ -2,18 +2,21 @@
 import { Scene, Color } from "excalibur";
 import { Background } from "./player.js";
 // import { Piece } from "./pieces/piece.js";
-import { Kai } from "./pieces/kai.js"
+import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./pieces/type.js"
 
 export class MyLevel extends Scene {
     onInitialize(engine) {
         const b1 = new Background(300, 800, 'b1');
         const b2 = new Background(800, 300, 'b2');
-        const testy1 = new Kai(300, 300, "testy");
-        const testy2 = new Kai(400, 300, "testy2");
-        const testy3 = new Kai(500, 300, "testy3");
-        const testy4 = new Kai(300, 400, "testy4");
-        const testy5 = new Kai(300, 500, "testy5");
-        const testy6 = new Kai(500, 500, "testy6");
+        const testy1 = new Kai(350, 300, "testy");
+        const testy2 = new Plumoni(400, 300, "testy2");
+        const testy3 = new Sakal(450, 300, "testy3");
+        const testy4 = new Rui(300, 350, "testy4");
+        const testy5 = new Jar(300, 400, "testy5");
+        const testy6 = new Tyern(300, 450, "testy6");
+        const testy7 = new Khyii(350, 500, 'testy7');
+        const testy8 = new Mras(400, 500, 'testy8');
+        const testy9 = new Khyii(450, 500, 'testy9');
 
         this.add(b1);
         this.add(b2);
@@ -23,6 +26,9 @@ export class MyLevel extends Scene {
         this.add(testy4);
         this.add(testy5);
         this.add(testy6);
+        this.add(testy7);
+        this.add(testy8);
+        this.add(testy9);
         // testy6.kill();
     }
 // 
