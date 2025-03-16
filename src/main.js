@@ -5,8 +5,8 @@ import { MyLevel } from "./level.js";
 // Goal is to keep main.ts small and just enough to configure the engine
 
 const game = new Engine({
-  width: 500, // Logical width and height in game pixels
-  height: 500,
+  width: 800, // Logical width and height in game pixels
+  height: 800,
   displayMode: DisplayMode.Fixed, // Display mode tells excalibur how to fill the window
   // pixelArt: true, // pixelArt will turn on the correct settings to render pixel art without jaggies or shimmering artifacts
   scenes: {
