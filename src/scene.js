@@ -1,9 +1,9 @@
 
 import { Scene, Color } from "excalibur";
 import { Background } from "./background.js";
-import { map } from "./rules/map.js";
+import { map } from "./map.js";
 // import { Piece } from "./pieces/piece.js";
-import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./pieces/type.js"
+import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./type.js"
 
 export class MyLevel extends Scene {
     onInitialize(engine) {

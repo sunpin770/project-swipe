@@ -1,6 +1,7 @@
 import { DisplayMode, Engine, Color } from "excalibur";
 import { loader } from "./resources.js";
 import { MyLevel } from "./scene.js";
+import { Pouch } from "./beh.js";
 
 // Goal is to keep main.ts small and just enough to configure the engine
 
@@ -28,5 +29,5 @@ game.start('start', { // name of the start scene 'start'
   //   color: Color.ExcaliburBlue
   // })
 }).then(() => {
-  
+  console.log(new Pouch)
 });
