@@ -1,6 +1,7 @@
 
 import { Scene, Color } from "excalibur";
 import { Background } from "./background.js";
+import { map } from "./rules/map.js";
 // import { Piece } from "./pieces/piece.js";
 import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./pieces/type.js"
 
@@ -8,18 +9,28 @@ export class MyLevel extends Scene {
     onInitialize(engine) {
         const b1 = new Background(300, 800, 'b1');
         const b2 = new Background(800, 300, 'b2');
-        const testy1 = new Kai(350, 300, "testy");
+
+
+        const testy1 = new Kai(340, 300, "testy", map.m1);
         const testy2 = new Plumoni(400, 300, "testy2");
-        const testy3 = new Sakal(450, 300, "testy3");
-        const testy4 = new Rui(300, 350, "testy4");
+        const testy3 = new Sakal(460, 300, "testy3");
+
+        const testy4 = new Rui(300, 335, "testy4");
         const testy5 = new Jar(300, 400, "testy5");
-        const testy6 = new Tyern(300, 450, "testy6");
-        const testy7 = new Khyii(350, 500, 'testy7');
+        const testy6 = new Tyern(300, 460, "testy6");
+
+        const testy7 = new Khyii(340, 500, 'testy7');
         const testy8 = new Mras(400, 500, 'testy8');
-        const testy9 = new Khyii(450, 500, 'testy9');
+        const testy9 = new Khyii(460, 500, 'testy9');
+
+        // const testy10 = new Khyii(500, 340, 'testy10');
+        // const testy11 = new Mras(500, 400, 'testy11');
+        // const test12 = new Khyii(500, 460, 'testy12');
 
         this.add(b1);
         this.add(b2);
+
+
         this.add(testy1);
         this.add(testy2);
         this.add(testy3);
@@ -29,6 +40,9 @@ export class MyLevel extends Scene {
         this.add(testy7);
         this.add(testy8);
         this.add(testy9);
+        // this.add(testy10);
+        // this.add(testy11);
+        // this.add(testy12);
         // testy6.kill();
     }
 // 

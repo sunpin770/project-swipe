@@ -1,9 +1,9 @@
 import { Actor, vec, Color } from "excalibur"
 export class Piece extends Actor {
-    constructor(x, y, name, color) {
+    constructor(x, y, name, color, pos) {
         super({
             name: name,
-            pos: vec(x, y),
+            pos: pos || vec(x, y),
             radius: 25,
             color: color,
         });
