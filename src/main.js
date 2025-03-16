@@ -1,6 +1,6 @@
 import { DisplayMode, Engine, Color } from "excalibur";
 import { loader } from "./resources.js";
-import { MyLevel } from "./level.js";
+import { MyLevel } from "./scene.js";
 
 // Goal is to keep main.ts small and just enough to configure the engine
 
@@ -28,5 +28,7 @@ game.start('start', { // name of the start scene 'start'
   //   color: Color.ExcaliburBlue
   // })
 }).then(() => {
-  // Do something after the game starts
+  game.add(b1);
+  game.add(b2);
+  game.add(testy);
 });

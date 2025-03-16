@@ -9,11 +9,6 @@ export class MyLevel extends Scene {
         const b1 = new Background(300, 800, 'b1');
         const b2 = new Background(800, 300, 'b2');
         const testy = new Kai(300, 300, "testy");
-
-        //add stuff
-        this.add(b1);
-        this.add(b2);
-        this.add(testy);
     }
 // 
     // onPreLoad(loader) {
