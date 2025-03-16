@@ -22,7 +22,7 @@ export class Background extends Actor {
       pos: vec(400, 400),
       width: width,
       height: height,
-      color: Color.fromHex('#FFFFFF'),
+      color: Color.Black,
       // anchor: vec(0, 0), // Actors default center colliders and graphics with anchor (0.5, 0.5)
       // collisionType: CollisionType.Active, // Collision Type Active means this participates in collisions read more https://excaliburjs.com/docs/collisiontypes
     });
