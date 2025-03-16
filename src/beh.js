@@ -1,4 +1,4 @@
-import { Kai } from "./type.js";
+import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./type.js";
 export class Pouch {
     constructor() {
         this.has = [];
@@ -6,7 +6,27 @@ export class Pouch {
         for (let i = 0; i < 8; i++) {
             this.has.push(new Kai(0, 0, 0, 0));
         }
-          
+        for (let i = 0; i < 8; i++) {
+            this.has.push(new Sakal(0, 0, 0, 0));
+        }
+        for (let i = 0; i < 8; i++) {
+            this.has.push(new Rui(0, 0, 0, 0));
+        }
+        for (let i = 0; i < 6; i++) {
+            this.has.push(new Mras(0, 0, 0, 0));
+        }
+        for (let i = 0; i < 6; i++) {
+            this.has.push(new Plumoni(0, 0, 0, 0));
+        }
+        for (let i = 0; i < 4; i++) {
+            this.has.push(new Jar(0, 0, 0, 0));
+        }
+        for (let i = 0; i < 4; i++) {
+            this.has.push(new Khyii(0, 0, 0, 0));
+        }
+        for (let i = 0; i < 4; i++) {
+            this.has.push(new Tyern(0, 0, 0, 0));
+        }
     }
 }
 /* Each pouch gets:
