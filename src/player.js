@@ -15,13 +15,13 @@ import { Actor, vec, Color } from "excalibur";
 
 
 export class Background extends Actor {
-  constructor(w, h, n) {
+  constructor(width, height, name) {
     super({
       // Giving your actor a name is optional, but helps in debugging using the dev tools or debug mode
-      name: n,
+      name: name,
       pos: vec(400, 400),
-      width: w,
-      height: h,
+      width: width,
+      height: height,
       color: Color.Magenta,
       // anchor: vec(0, 0), // Actors default center colliders and graphics with anchor (0.5, 0.5)
       // collisionType: CollisionType.Active, // Collision Type Active means this participates in collisions read more https://excaliburjs.com/docs/collisiontypes
