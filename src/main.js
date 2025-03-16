@@ -1,4 +1,4 @@
-import { Color, DisplayMode, Engine, FadeInOut } from "excalibur";
+import { DisplayMode, Engine } from "excalibur";
 import { loader } from "./resources.js";
 import { MyLevel } from "./level.js";
 
@@ -21,11 +21,11 @@ const game = new Engine({
 
 game.start('start', { // name of the start scene 'start'
   loader, // Optional loader (but needed for loading images/sounds)
-  inTransition: new FadeInOut({ // Optional in transition
-    duration: 1000,
-    direction: 'in',
-    color: Color.ExcaliburBlue
-  })
+  // inTransition: new FadeInOut({ // Optional in transition
+  //   duration: 1000,
+  //   direction: 'in',
+  //   color: Color.ExcaliburBlue
+  // })
 }).then(() => {
   // Do something after the game starts
 });
