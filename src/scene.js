@@ -1,4 +1,5 @@
-import { randomFromArray } from "./utils.js";
+import { randomFromArray, stealRandomFromArray } from "./utils.js";
+import { player1 } from "./players.js";
 import { Scene, Color } from "excalibur";
 import { Background } from "./background.js";
 import { Pouch } from "./beh.js";
@@ -10,6 +11,12 @@ export class MyLevel extends Scene {
     onInitialize(engine) {
         const b1 = new Background(300, 800, 'b1');
         const b2 = new Background(800, 300, 'b2');
+        this.add(b1);
+        this.add(b2);
+
+        const first = stealRandomFromArray(player1.pouch.has, [])
+        first.pos = map.m1;
+        this.add(first)
 
 
         // const testy1 = new Kai(340, 300, "testy", map.m1);
@@ -28,8 +35,7 @@ export class MyLevel extends Scene {
         // const testy11 = new Mras(500, 400, 'testy11');
         // const test12 = new Khyii(500, 460, 'testy12');
 
-        this.add(b1);
-        this.add(b2);
+
 
 
         // this.add(testy1);
@@ -45,18 +51,15 @@ export class MyLevel extends Scene {
         // this.add(testy11);
         // this.add(testy12);
         // testy6.kill();
-        this.player1sPouch = new Pouch();
-        this.add(randomFromArray(this.player1sPouch.has));
     }
 // 
     // onPreLoad(loader) {
     //     // Add any scene specific resources to load
     // }
 // 
-    onActivate(context) {
-
-    }
-// 
+   // onActivate(context) {
+   // }
+// //
     // onDeactivate(context) {
     //     // Called when Excalibur transitions away from this scene
     //     // Only 1 scene is active at a time
