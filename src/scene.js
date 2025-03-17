@@ -4,6 +4,7 @@ import { Scene, Color } from "excalibur";
 import { Background } from "./background.js";
 import { Pouch } from "./beh.js";
 import { map } from "./map.js";
+import { refill } from "./refill.js";
 // import { Piece } from "./pieces/piece.js";
 import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./type.js"
 
@@ -14,10 +15,21 @@ export class MyLevel extends Scene {
         this.add(b1);
         this.add(b2);
 
-        const first = stealRandomFromArray(player1.pouch.has, [])
-        first.pos = map.m1;
-        this.add(first)
+        // refill();
 
+        // const first = stealRandomFromArray(player1.pouch.has, [])
+        // first.pos = map.m1;
+        // this.add(first)
+// 
+        // const second = stealRandomFromArray(player1.pouch.has, [])
+        // second.pos = map.m2;
+        // this.add(second)
+// 
+        // const third = stealRandomFromArray(player1.pouch.has, [])
+        // third.pos = map.m3;
+        // this.add(third)
+// 
+        console.log(player1.pouch)
 
         // const testy1 = new Kai(340, 300, "testy", map.m1);
         // const testy2 = new Plumoni(400, 300, "testy2", map.m2);

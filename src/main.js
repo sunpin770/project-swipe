@@ -29,5 +29,5 @@ game.start('start', { // name of the start scene 'start'
   //   color: Color.ExcaliburBlue
   // })
 }).then(() => {
-  console.log(new Pouch)
+
 });
