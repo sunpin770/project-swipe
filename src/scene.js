@@ -17,18 +17,18 @@ export class MyLevel extends Scene {
 
         // refill();
 
-        // const first = stealRandomFromArray(player1.pouch.has, [])
-        // first.pos = map.m1;
-        // this.add(first)
-// 
-        // const second = stealRandomFromArray(player1.pouch.has, [])
-        // second.pos = map.m2;
-        // this.add(second)
-// 
-        // const third = stealRandomFromArray(player1.pouch.has, [])
-        // third.pos = map.m3;
-        // this.add(third)
-// 
+        const first = stealRandomFromArray(player1.pouch.has, [])
+        first.pos = map.m1;
+        this.add(first)
+
+        const second = stealRandomFromArray(player1.pouch.has, [])
+        second.pos = map.m2;
+        this.add(second)
+
+        const third = stealRandomFromArray(player1.pouch.has, [])
+        third.pos = map.m3;
+        this.add(third)
+
         console.log(player1.pouch)
 
         // const testy1 = new Kai(340, 300, "testy", map.m1);
