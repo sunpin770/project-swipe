@@ -1,4 +1,4 @@
-import { Pouch } from "./beh.js"
+import { Pouch } from "./pouch.js"
 class Player {
     constructor() {
         this.pouch = new Pouch;

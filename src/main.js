@@ -1,7 +1,7 @@
 import { DisplayMode, Engine, Color } from "excalibur";
 import { loader } from "./resources.js";
 import { MyLevel } from "./scene.js";
-import { Pouch } from "./beh.js";
+import { Pouch } from "./pouch.js";
 
 // Goal is to keep main.ts small and just enough to configure the engine
 

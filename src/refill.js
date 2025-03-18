@@ -1,6 +1,5 @@
 import { player1, player2, player3, player4 } from "./players.js"
 import { map } from "./map.js"
-import { vec } from "excalibur"
 import { stealRandomFromArray } from "./utils.js"
 export function refill(game) {
     let i = 1
@@ -10,18 +9,18 @@ export function refill(game) {
             game.add(b);
             b.pos = m;
         }
-        else if (i < 7) {
-            let b = stealRandomFromArray(player2.pouch.has, []);
+        else if (i == 4 || i == 6 || i == 8) {
+            let b = stealRandomFromArray(player2.pouch.has, player2.pouch.lost);
             b.pos = m;
             game.add(b)
         }
-        else if (i < 10) {
-            let b = stealRandomFromArray(player3.pouch.has, []);
+        else if (i > 9) {
+            let b = stealRandomFromArray(player3.pouch.has, player3.pouch.lost);
             b.pos = m;
             game.add(b)
         }
-        else {
-            let b = stealRandomFromArray(player4.pouch.has, []);
+        else if (i == 5 || i == 7 || i == 9) {
+            let b = stealRandomFromArray(player4.pouch.has, player4.pouch.lost);
             b.pos = m;
             game.add(b)
         };
