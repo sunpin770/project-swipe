@@ -7,5 +7,12 @@ export class Piece extends Actor {
             radius: 25,
             color: color,
         });
-    }
+        this.on('pointerdown', evt => {
+            // Pointer events tunnel in z order from the screen down, you can cancel them!
+            // if (true) {
+            //   evt.cancel();
+            // }
+            console.log('You clicked the actor @', evt.worldPos.toString(), this);
+        });
+    };
 }

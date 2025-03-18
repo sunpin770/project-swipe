@@ -54,7 +54,7 @@ export class Background extends Actor {
       // if (true) {
       //   evt.cancel();
       // }
-      console.log('You clicked the actor @', evt.worldPos.toString());
+      console.log('You clicked the actor @', evt.worldPos.toString(), this);
     });
   }
 
