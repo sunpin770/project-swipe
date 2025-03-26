@@ -2,6 +2,7 @@ import { Jar, Kai, Khyii, Mras, Plumoni, Rui, Sakal, Tyern } from "./type.js";
 export class Pouch {
     constructor() {
         this.has = [];
+        this.onBoard = [];
         this.lost = [];
         for (let i = 0; i < 8; i++) {
             this.has.push(new Kai(0, 0, 0, 0));
