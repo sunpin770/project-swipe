@@ -1,4 +1,5 @@
-import { Actor, vec, Color } from "excalibur"
+import { Actor, vec } from "excalibur"
+import { stealRandomFromArray } from "./utils.js";
 export class Piece extends Actor {
     constructor(x, y, name, color, pos) {
         super({
@@ -13,6 +14,8 @@ export class Piece extends Actor {
             //   evt.cancel();
             // }
             console.log('You clicked the actor @', evt.worldPos.toString(), this);
+            this.kill();
+            stealRandomFromArray(/*whatever thatis? */[], []) //beh in the logic here TODO EMERGE!!!
         });
     };
 }

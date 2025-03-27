@@ -49,13 +49,13 @@ export class Background extends Actor {
     // });
 
     // Sometimes you want to click on an actor!
-    this.on('pointerdown', evt => {
+    //this.on('pointerdown', evt => {
       // Pointer events tunnel in z order from the screen down, you can cancel them!
       // if (true) {
       //   evt.cancel();
       // }
-      console.log('You clicked the actor @', evt.worldPos.toString(), this);
-    });
+      //console.log('You clicked the actor @', evt.worldPos.toString(), this);
+    //});
   }
 
   onPreUpdate(engine, elapsedMs) {
