@@ -1,10 +1,15 @@
 import { Pouch } from "./pouch.js"
 class Player {
-    constructor() {
-        this.pouch = new Pouch;
+    constructor(owner) {
+        this.pouch = new Pouch(owner);
     }
-}
-export const player1 = new Player;
-export const player2 = new Player;
-export const player3 = new Player;
-export const player4 = new Player;
+};
+export let player1;
+export let player2;
+export let player3;
+export let player4;
+
+player1 = new Player(player1);
+player2 = new Player(player2);
+player3 = new Player(player3);
+player4 = new Player(player4);
