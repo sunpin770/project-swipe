@@ -19,4 +19,5 @@ export class Piece extends Actor {
             stealRandomFromArray(/*whatever thatis? */[], []) //beh in the logic here TODO EMERGE!!!
         });
     };
-}
+};
+//I guess I need to just typesome random stuff here for visual effect; after all, isn't this file just... a bit too short? Or something like that. Either way, it makes nice typing noises, so it's fine-ish.
