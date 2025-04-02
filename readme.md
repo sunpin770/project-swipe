@@ -1,10 +1,8 @@
-# Excalibur Vanilla JS Template
+# Project ***Swipe!***
 
-This is an example of how to create a new Excalibur game only in vanilla JS.
+A simple digitization of a *very* complicated boardgame I made, called ***swipe!***
 
-In this example we use ES modules to import script files and unpkg to load the excalibur library into the `ex` global.
-
-Visit the `index.html` file in a web server to see the game, this is currently running on github pages https://excaliburjs.com/template-vanilla-js/index.html
+Visit the `index.html` file in a web server to see the game, this is currently running on github pages https://projectswipe.netlify.app. 
 
 ## Running Locally
 
