@@ -40,7 +40,7 @@ game.start('start', { // name of the start scene 'start'
   // })
 }).then(() => {
   calculateExPixelConversion(game.screen);
-  getElementById('myBtn').style.display = "block";
+  document.getElementById('myBtn').style.display = "block";
 });
 
 //temp:
