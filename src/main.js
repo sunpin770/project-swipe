@@ -21,6 +21,7 @@ const game = new Engine({
   // fixedUpdateTimestep: 16 // Turn on fixed update timestep when consistent physic simulation is important
 });
 
+/*
 const calculateExPixelConversion = (Screen) => {
   const origin = screen.worldToPageCoordinates(Vector.Zero);
   const singlePixel = screen.worldToPageCoordinates(vec(1, 0)).sub(origin);
@@ -29,7 +30,7 @@ const calculateExPixelConversion = (Screen) => {
 }
 // Update pixel conversion on resize
 game.screen.events.on('resize', () => calculateExPixelConversion(game.screen));
-
+*/
 game.start('start', { // name of the start scene 'start'
   loader, // Optional loader (but needed for loading images/sounds)
   // inTransition: new FadeInOut({ // Optional in transition
@@ -38,7 +39,7 @@ game.start('start', { // name of the start scene 'start'
   //   color: Color.ExcaliburBlue
   // })
 }).then(() => {
-  calculateExPixelConversion(game.screen);
+  //calculateExPixelConversion(game.screen);
 });
 
 //temp:
