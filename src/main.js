@@ -23,8 +23,8 @@ const game = new Engine({
 
 
 const calculateExPixelConversion = (screen) => {
-  const origin = screen.worldToScreenCoordinates(new Vector.Zero);
-  const singlePixel = screen.worldToScreenCoordinates(Vector(1, 0)).sub(origin);
+  const origin = screen.worldToScreenCoordinates(Vector.Zero);
+  const singlePixel = screen.worldToScreenCoordinates(new Vector(1, 0)).sub(origin);
   const pixelConversion = singlePixel.x;
   document.documentElement.style.setProperty('--pixel-conversion', pixelConversion.toString());
 }
