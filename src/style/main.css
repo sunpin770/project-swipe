@@ -8,4 +8,8 @@ body {
     background-color: #000000;
     border-width: 0;
     color: #ffffff;
+    /* display: none; */
+    width: 50;
+    height: 20;
+    pointer-events: all;
 }
