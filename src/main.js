@@ -1,4 +1,4 @@
-import { DisplayMode, Engine, Color, Screen, Vector } from "excalibur";
+import { DisplayMode, Engine, Color, Vector } from "excalibur";
 import { loader } from "./resources.js";
 import { MyLevel } from "./scene.js";
 import { Pouch } from "./pouch.js";
@@ -22,7 +22,7 @@ const game = new Engine({
 });
 
 
-const calculateExPixelConversion = (Screen) => {
+const calculateExPixelConversion = (screen) => {
   const origin = screen.worldToPageCoordinates(Vector.Zero);
   const singlePixel = screen.worldToPageCoordinates(vec(1, 0)).sub(origin);
   const pixelConversion = singlePixel.x;
