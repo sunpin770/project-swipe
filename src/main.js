@@ -1,4 +1,4 @@
-import { DisplayMode, Engine, Color, Screen } from "excalibur";
+import { DisplayMode, Engine, Color, Screen, Vector } from "excalibur";
 import { loader } from "./resources.js";
 import { MyLevel } from "./scene.js";
 import { Pouch } from "./pouch.js";
