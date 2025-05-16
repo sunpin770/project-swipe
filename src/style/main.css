@@ -13,3 +13,9 @@ body {
     height: 20;
     pointer-events: all;
 }
+.excalibur-scale {
+    /* transform from the top left of the element */
+    transform-origin: 0 0;
+    /* scale the ui */
+    transform: scale(var(--pixel-conversion), var(--pixel-conversion));
+}
