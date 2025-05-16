@@ -2,3 +2,9 @@ body {
     overflow: hidden;
     /*temp transform: scale(0.9); */
 }
+#myBtn {
+    position: absolute; 
+    z-index: 1000;
+    background-color: #000000;
+    border-width: 0;
+}
